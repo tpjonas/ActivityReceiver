@@ -25,8 +25,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
+            <!-- Hier melden wir die Activity  als Listener für "Emailen" an -->
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+                <data android:mimeType="message/rtc2822" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
